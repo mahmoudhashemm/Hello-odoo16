@@ -10,7 +10,7 @@ services:
     restart: always
     volumes:
         - ./postgresql:/var/lib/postgresql/data
-  odoo15:
+  odoo16:
     image: odoo:16.0
 
     user: root
