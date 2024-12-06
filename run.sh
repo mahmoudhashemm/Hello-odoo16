@@ -22,7 +22,7 @@ sed -i 's/8072/'$PORT8072'/g' $DESTINATION/docker-compose.yml
 sed -i 's/8069/'$PORT8069'/g' $DESTINATION/etc/odoo.conf
 sed -i 's/8072/'$PORT8072'/g' $DESTINATION/etc/odoo.conf
 
-git clone --depth 1 --branch main git@github.com:mahmoudhashemm/pro-odoo-16 ./ $DESTINATION/enterprise
+git clone --depth 1 --branch main git@github.com:mahmoudhashemm/pro-odoo-16 "$DESTINATION/enterprise"
 
 # run Odoo
 docker-compose -f $DESTINATION/docker-compose.yml up -d
