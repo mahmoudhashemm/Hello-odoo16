@@ -13,7 +13,7 @@ services:
     mem_limit: 6g  # تحديد الحد الأقصى للذاكرة 6 جيجابايت
     cpus: 6      # تحديد عدد الأنوية المستخدمة بـ 12 كور
   odoo16:
-    image: mahmoudhashemm/odoo-16:latest1
+    image: mahmoudhashemm/odoo-16:latest2
 
     user: root
     depends_on:
